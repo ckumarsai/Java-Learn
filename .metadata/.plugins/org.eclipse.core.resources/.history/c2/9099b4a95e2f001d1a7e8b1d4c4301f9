@@ -1,0 +1,24 @@
+package Inheritance;
+
+class  Vahicle {
+	public int wheels;
+	public String colour;	
+}
+class Car extends Vahicle {
+	void CarWheels(int wheels) {
+		int gear=4;
+		int stearing=1;
+		System.out.println("car has"+wheels+"wheels");
+		System.out.println(gear);
+		System.out.println(stearing);
+	}
+	
+}
+public class HeirarchicalInheritance {
+	public static void main(String[] args) {
+		Car c=new Car();
+		c.CarWheels(4);
+	}
+	
+
+}

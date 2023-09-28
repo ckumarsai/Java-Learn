@@ -1,0 +1,24 @@
+
+public class Overloading 
+{
+	public static int  ashok(int i,int j) {
+//		System.out.println(i+j);
+		return i+j;
+	}
+//	public static  int ashok(int c,int b,int k) {
+////		System.out.println("hello ashok");
+//		return c+b+k;
+//	}
+	
+	public static double ashok(double a,double b,double c) {
+//		System.out.println(a+b+c);
+		return a+b+c;
+	}
+	public static void main(String[] args) {
+		//Overloading o=new Overloading();
+	    ashok(10,20);
+//		System.out.println(ashok(20,40,60));
+		ashok(20,40,80);
+	}
+
+}

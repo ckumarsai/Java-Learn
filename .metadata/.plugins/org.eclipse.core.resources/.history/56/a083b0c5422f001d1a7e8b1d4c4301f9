@@ -1,0 +1,23 @@
+package Inheritance;
+class Animal{
+	void parentAnimal() {
+		System.out.println("animal mathod");
+	}
+}
+class Dog extends Animal {
+	void printDog() {
+		System.out.println("dog is running");
+	}
+}
+public class SingleInheritance {
+	public static void main(String[] args) {
+		Dog d=new Dog();
+		d.parentAnimal();
+		d.printDog();
+		Animal a=new Dog();
+		a.parentAnimal();
+		a.printDog();
+	}
+	
+
+}

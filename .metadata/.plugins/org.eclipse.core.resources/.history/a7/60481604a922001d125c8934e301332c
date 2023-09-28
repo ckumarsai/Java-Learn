@@ -1,0 +1,24 @@
+class Animals{
+	static void run1() {
+		System.out.println("Hiding-animal is run");
+	}
+	void run2() {
+		System.out.println("Overriding-animal is run");
+	}
+}
+class cheetah extends Animals{
+	static void run1() {
+		System.out.println("Hiding-cheetah running fastly");
+	}
+	void run2() {
+		System.out.println("Overriding- is cheetah runs fastly");
+	}
+}
+public class MethodhidingOverriding {
+	Animals al=new Animals();
+//	al.run()1;
+	al.run2();
+	
+	
+
+}

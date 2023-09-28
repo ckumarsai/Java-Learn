@@ -1,0 +1,24 @@
+interface Printable{
+	int a=10;// by default static and final
+	void print();
+}
+interface Showable{
+	void show();
+}
+
+public class TestInterface implements  Printable, Showable {
+	public void print() {
+		System.out.println("print");
+	}
+	public void show() {
+		System.out.println("Show");
+	}
+	public  static void main(String[] args) {
+		TestInterface t=new TestInterface();
+		t.print();
+		t.show();
+//		t.a=30; 
+		System.out.println(t.a);
+	}
+
+}

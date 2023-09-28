@@ -1,0 +1,19 @@
+
+public class InstanceStaticVar {
+	int a=20;   //instance variable
+	static int b=40; // static variable
+//	void printValue() {
+//		System.out.println("The value is" + a);
+//		System.out.println("The value is" + b);
+//	}
+	public static void main(String[] args) {
+		InstanceStaticVar obj = new InstanceStaticVar();
+		System.out.println("the value is:"+ obj.a);
+		
+		System.out.println("the value is:"+ InstanceStaticVar.b);
+		System.out.println("the value is:"+ obj.b);
+		System.out.println("the value is:"+ b);
+
+	} 
+
+}
